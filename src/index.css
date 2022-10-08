@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr';
+  src: url('fonts/HelveticaNeueCyr-Bold.eot');
+  src: url('fonts/HelveticaNeueCyr-Bold.eot') format('embedded-opentype'),
+    url('fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+    url('fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr';
+  src: url('fonts/HelveticaNeueCyr-Medium.eot');
+  src: url('fonts/HelveticaNeueCyr-Medium.eot') format('embedded-opentype'),
+    url('fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+    url('fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr';
+  src: url('fonts/HelveticaNeueCyr-Roman.eot');
+  src: url('fonts/HelveticaNeueCyr-Roman.eot') format('embedded-opentype'),
+    url('fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+    url('fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  @apply pl-8 pr-8 md:pl-16 md:pr-16 lg:pr-32 lg:pl-32;
+}
+
+.text-primary {
+  color: #2e2e2e;
+}
+
+h1 {
+  @apply text-2xl font-bold tracking-tight;
+  font-family: 'Helvetica Neue Cyr';
+}
+
+p {
+  @apply text-sm font-normal;
+}
+
+.purple-btn {
+  background: linear-gradient(94.64deg, #6038f2 8.66%, #8c18d9 100%);
+  box-shadow: 0px 20px 40px -10px rgba(96, 56, 242, 0.35);
+  border-radius: 60px;
+  width: 180px;
+  height: 60px;
+  @apply lg:w-[200px] lg:h-[65px] text-sm font-bold text-center text-white;
+}
