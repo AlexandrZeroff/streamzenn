@@ -43,8 +43,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  @apply pl-8 pr-8 md:pl-16 md:pr-16 lg:pr-32 lg:pl-32;
+.container-p {
+  @apply pl-8 pr-8 md:pl-16 md:pr-16 lg:pr-24 lg:pl-24;
 }
 
 .text-primary {
@@ -52,12 +52,17 @@ body {
 }
 
 h1 {
-  @apply text-2xl font-bold tracking-tight;
+  @apply text-2xl md:text-3xl md:leading-10 lg:text-[40px] lg:leading-[52px] font-bold tracking-tight;
   font-family: 'Helvetica Neue Cyr';
 }
-
+h2 {
+  @apply text-xl font-bold lg:text-2xl;
+}
+h3 {
+  @apply text-lg font-bold lg:text-xl;
+}
 p {
-  @apply text-sm font-normal;
+  @apply font-normal;
 }
 
 .purple-btn {
@@ -66,5 +71,177 @@ p {
   border-radius: 60px;
   width: 180px;
   height: 60px;
-  @apply lg:w-[200px] lg:h-[65px] text-sm font-bold text-center text-white;
+  @apply lg:w-[200px] lg:h-[65px] font-bold text-center text-white;
+}
+
+.purple-btn:hover {
+  box-shadow: 0px 20px 50px 2px rgba(96, 56, 242, 0.5);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.light-btn {
+  background: #e8e2ff;
+  border-radius: 60px;
+  width: 160px;
+  height: 50px;
+  @apply font-bold text-sm text-center text-[#6038F2];
+}
+
+.light-btn-nav {
+  background: #e8e2ff;
+  border-radius: 60px;
+  width: 135px;
+  height: 44px;
+  @apply lg:w-[160px];
+  @apply lg:h-[50px];
+  @apply font-bold text-sm text-center text-[#6038F2];
+}
+
+.light-btn:hover {
+  box-shadow: 0px 20px 40px -11px #6038f2;
+  transition: box-shadow 0.1s ease-out;
+}
+
+.light-btn-nav:hover {
+  box-shadow: 0px 20px 40px -11px #6038f2;
+  transition: box-shadow 0.1s ease-out;
+}
+
+.inline-navbar a {
+  @apply text-xs lg:text-sm font-bold text-black;
+}
+
+.inline-navbar a + a {
+  @apply ml-3 lg:ml-[2vw];
+}
+
+.inline-navbar a:hover {
+  @apply text-[#6038F2];
+  border-bottom: 3px solid #6038f2;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    grid-template-columns: 4fr 3fr;
+    /* column-gap: 2rem; */
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-container {
+    grid-template-columns: 4fr 2.5fr;
+    /* column-gap: 2rem; */
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-container {
+    grid-template-columns: 4fr 2fr;
+    /* column-gap: 2rem; */
+  }
+}
+
+svg.solution {
+  filter: drop-shadow(0px 40px 64px -21px rgba(96 56 242 / 0.6));
+}
+
+.benefits-lg {
+  column-gap: 2rem;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    '. bar first'
+    'second bar .'
+    '. bar third'
+    'fourth bar .'
+    '. bar fifth';
+}
+
+.gradient-line {
+  background: linear-gradient(180deg, rgba(96, 56, 242, 0) 0%, #6038f2 100%);
+}
+
+.area-bar {
+  grid-area: bar;
+}
+
+.purple-gradient-text {
+  background: linear-gradient(94.64deg, #6038f2 8.66%, #8c18d9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feature:hover {
+  box-shadow: 11px 19px 70px -31px rgba(84, 84, 84, 0.54);
+  transition: box-shadow 0.3s;
+}
+.feature:hover h2 {
+  background: linear-gradient(94.64deg, #6038f2 8.66%, #8c18d9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.how-process {
+  grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr auto;
+  grid-template-columns: 1fr 9fr;
+  column-gap: 12px;
+  row-gap: 2px;
+}
+
+.userform input {
+  padding: 3px 0;
+  border: 0;
+  border-bottom: 1px solid #70747e;
+  background: #272f42;
+  color: #f7feff;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.userform input::placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+}
+
+.userform input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+}
+.userform input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+.userform input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}
+.userform input:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+
+.userform input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+  placeholder: none;
+}
+
+.userform input:focus::placeholder {
+  color: transparent;
+}
+
+.userform span {
+  @apply text-red-500;
+}
+
+.nav-menu a h2 {
+  @apply text-[#6038F2] mt-4;
+}
+
+.footer-links div:hover {
+  box-shadow: 0px 0px 50px 2px rgba(96, 56, 242, 0.5);
+  transition: box-shadow 0.05s ease-in-out;
+}
+
+.bottom-link a{
+  @apply text-[#F7FEFF] text-base mt-4;
 }
