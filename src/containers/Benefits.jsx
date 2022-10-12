@@ -3,7 +3,7 @@ import Benefit from '../components/Benefit'
 
 const Benefits = () => {
   return (
-    <section>
+    <section id="benefits">
       <div className="container-p">
         <h1 className="text-center mt-24">Key benefits</h1>
         <div className="benefits-container flex mb-16 md:hidden">
@@ -77,7 +77,7 @@ const Benefits = () => {
             style={{ gridArea: 'fifth' }}
             text="Contact our support team at any time."
           />
-          <div className="area-bar gradient-line w-1 mt-12 mb-20 rounded-md">
+          <div className="area-bar gradient-line w-1 mt-12 mb-20 rounded-md mx-auto">
             <p>&nbsp;</p>
           </div>
         </div>

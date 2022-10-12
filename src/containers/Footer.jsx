@@ -5,6 +5,7 @@ import facebook from '../assets/facebook.svg'
 import twitter from '../assets/facebook.svg'
 import viber from '../assets/viber.svg'
 import logo from '../assets/logo-2.png'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Footer = () => {
   return (
@@ -88,7 +89,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="pb-12 lg:grid grid-cols-2 gap-x-8">
-          <div className='lg:max-w-xs'>
+          <div className="lg:max-w-xs">
             <img
               src={logo}
               alt="Streamzenn"
@@ -108,26 +109,32 @@ const Footer = () => {
           <div className="hidden lg:grid grid-cols-3 mt-12 pl-16">
             <div>
               <h3 className="text-white">Menu</h3>
-              <nav className='bottom-link flex flex-col items-start'>
-                <a href="/">Home</a>
-                <a href="#about">About us</a>
-                <a href="#benefits">Key benefits</a>
-                <a href="#features">Features</a>
-                <a href="#howitworks">How it works</a>
+              <nav className="bottom-link flex flex-col items-start">
+                <AnchorLink offset="60" href="#home">
+                  Home
+                </AnchorLink>
+                <AnchorLink offset="60" href="#about">
+                  About us
+                </AnchorLink>
+                <AnchorLink offset="60" href="#benefits">
+                  Key benefits
+                </AnchorLink>
+                <AnchorLink href="#features">Features</AnchorLink>
+                <AnchorLink href="#howitworks">How it works</AnchorLink>
               </nav>
             </div>
             <div>
               <h3 className="text-white">Support</h3>
-              <nav className='bottom-link flex flex-col items-start'>
+              <nav className="bottom-link flex flex-col items-start">
                 <a href="/">Online Chat</a>
                 <a href="#about">Help</a>
               </nav>
             </div>
             <div>
               <h3 className="text-white">Policies</h3>
-              <nav className='bottom-link flex flex-col items-start'>
-                <a href="/">Privacy policy</a>
-                <a href="#about">Terms</a>
+              <nav className="bottom-link flex flex-col items-start">
+                <a href="https://drive.google.com/file/d/1-NQ_regpfyHrPLcmPYeVbJ1EKqCQOhGl/view" target="_blank">Privacy policy</a>
+                <a href="https://drive.google.com/file/d/1-NQ_regpfyHrPLcmPYeVbJ1EKqCQOhGl/view" target="_blank">Terms</a>
               </nav>
             </div>
           </div>

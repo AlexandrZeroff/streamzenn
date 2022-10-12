@@ -17,7 +17,7 @@ const Benefit = ({
           </p>
         </div>
         <h2 className="mt-3 purple-gradient-text">{header}</h2>
-        <p className="mt-2 text-sm md:text-base lg:text-lg" style={textAlign}>
+        <p className="mt-2 text-sm md:text-base lg:text-lg max-w-lg" style={textAlign}>
           {text}
         </p>
       </div>

@@ -7,7 +7,7 @@ import line3 from '../assets/line3.svg'
 
 const How = () => {
   return (
-    <section className='bg-[#F9F9FB]'>
+    <section id="howitworks" className='bg-[#F9F9FB]'>
         <div className='container-p pt-20'>
             <h1 className='text-center'>How Streamzenn Works?</h1>
             <p className='mt-2 text-center md:text-base lg:text-lg'>Integrate with any eCommerce Platform that has an API.</p>
@@ -27,7 +27,7 @@ const How = () => {
                 <img src={dot} alt="" className='h-[26px] w-[26px] mx-auto'></img>
                 <h2>Get started with your shopping events</h2>
             </div>
-            <div className='hidden lg:grid grid-cols-4 gap-2 my-20 xl:my-24'>
+            <div className='hidden lg:grid grid-cols-4 gap-2 py-20 xl:py-24'>
               <img src={line1} alt=""></img>
               <img src={line2} alt=""></img>
               <img src={line3} alt=""></img>

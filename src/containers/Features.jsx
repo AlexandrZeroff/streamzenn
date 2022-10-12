@@ -8,10 +8,11 @@ import live from '../assets/features/live.png'
 import click from '../assets/features/click.png'
 import emojis from '../assets/features/emojis.png'
 import devices from '../assets/features/devices.png'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Features = () => {
   return (
-    <section className="bg-[#F9F9FB]">
+    <section id="features" className="bg-[#F9F9FB]">
       <div className="container-p pt-20 flex flex-col items-center">
         <h1 className="text-center">Features</h1>
         <div className="features-container mt-12 sm:flex sm:flex-wrap sm:justify-center">
@@ -56,7 +57,7 @@ const Features = () => {
             margin="mt-[-14%]"
           />
         </div>
-        <button className='purple-btn mt-20 mb-16 mx-auto text-base'>Book demo</button>
+        <AnchorLink href='#userform' offset="100px"><button className='purple-btn mt-20 mb-16 mx-auto text-base'>Book demo</button></AnchorLink>
       </div>
     </section>
   )

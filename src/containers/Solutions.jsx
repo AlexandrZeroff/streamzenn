@@ -5,10 +5,10 @@ import chat from '../assets/solutions/chat-cropped.png'
 
 const Solutions = () => {
   return (
-    <section>
+    <section id="about">
       <div className="container-p">
         <h1 className="mt-16 text-center lg:mt-24">Live Commerce Solutions</h1>
-        <p className="text-primary mt-2 text-center text-sm  md:text-base lg:text-lg">
+        <p className="text-primary mt-2 lg:mt-6 text-center text-sm  md:text-base lg:text-lg max-w-3xl mx-auto">
           Transform your business with streamzenn live commerce, the most
           effective way to interact with customers and reimagine the everyday
           purchasing process.

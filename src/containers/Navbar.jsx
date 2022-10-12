@@ -2,15 +2,10 @@ import React, { useState } from 'react'
 import logo from '../assets/streamzenn-logo.svg'
 import { VscMenu, VscClose } from 'react-icons/vsc'
 import { motion, AnimatePresence } from 'framer-motion'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
-  const itemVariants = {
-    closed: {
-      opacity: 0
-    },
-    open: { opacity: 1 }
-  };
   const sideVariants = {
     closed: {
       transition: {
@@ -27,15 +22,19 @@ const Navbar = () => {
   }
 
   return (
-    <section className="bg-[#FBFBFD] relative">
+    <section id="home" className="bg-[#FBFBFD] relative">
       <div className="container-p">
-        <div className="h-16 flex items-center justify-between">
+        <div className="h-16 flex items-center justify-between md:my-2 lg:my-4">
           <img src={logo} alt="Logo" className="h-8 lg:h-12 my-auto"></img>
-          <nav className='inline-navbar hidden md:flex items-center justify-center '>
-            <a href="#about">ABOUT US</a>
-            <a href="#about">KEY BENEFITS</a>
-            <a href="#about">FEATURES</a>
-            <a href="#about">HOW IT WORKS</a>
+          <nav className="inline-navbar hidden md:flex items-center justify-center ">
+            <AnchorLink offset="60" href="#about">
+              ABOUT US
+            </AnchorLink>
+            <AnchorLink offset="60" href="#benefits">
+              KEY BENEFITS
+            </AnchorLink>
+            <AnchorLink href="#features">FEATURES</AnchorLink>
+            <AnchorLink href="#howitworks">HOW IT WORKS</AnchorLink>
           </nav>
           <button className="hidden md:inline light-btn-nav">Contact</button>
           <div className="ml-auto my-auto md:hidden">
@@ -67,18 +66,32 @@ const Navbar = () => {
                     animate="open"
                     variants={sideVariants}
                   >
-                    <motion.a href="#about" variants={itemVariants}>
+                    <AnchorLink
+                      offset="60"
+                      href="#about"
+                      onClick={() => setToggleMenu(false)}
+                    >
                       <h2>ABOUT US</h2>
-                    </motion.a>
-                    <motion.a href="#about" variants={itemVariants}>
+                    </AnchorLink>
+                    <AnchorLink
+                      offset="60"
+                      href="#benefits"
+                      onClick={() => setToggleMenu(false)}
+                    >
                       <h2>KEY BENEFITS</h2>
-                    </motion.a>
-                    <motion.a href="#about" variants={itemVariants}>
+                    </AnchorLink>
+                    <AnchorLink
+                      href="#features"
+                      onClick={() => setToggleMenu(false)}
+                    >
                       <h2>FEATURES</h2>
-                    </motion.a>
-                    <motion.a href="#about" variants={itemVariants}>
+                    </AnchorLink>
+                    <AnchorLink
+                      href="#howitworks"
+                      onClick={() => setToggleMenu(false)}
+                    >
                       <h2>HOW IT WORKS</h2>
-                    </motion.a>
+                    </AnchorLink>
                   </motion.nav>
                   <button className="light-btn mx-auto mt-12">Contact</button>
                 </motion.div>
