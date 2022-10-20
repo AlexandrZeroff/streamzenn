@@ -1,10 +1,8 @@
 import React from 'react'
 import UserForm from '../components/UserForm'
-import telegram from '../assets/telegram.svg'
 import facebook from '../assets/facebook.svg'
-import twitter from '../assets/facebook.svg'
-import viber from '../assets/viber.svg'
-import logo from '../assets/logo-2.png'
+import insta from '../assets/insta.svg'
+import logo from '../assets/logo-white-text.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Footer = () => {
@@ -25,15 +23,6 @@ const Footer = () => {
                 <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
                   <a className="m-auto" href="#">
                     <img
-                      src={telegram}
-                      className="w-[22px] "
-                      alt="Telegram"
-                    ></img>
-                  </a>
-                </div>
-                <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
-                  <a className="m-auto" href="#">
-                    <img
                       src={facebook}
                       className="w-[22px] "
                       alt="Telegram"
@@ -43,15 +32,10 @@ const Footer = () => {
                 <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
                   <a className="m-auto" href="#">
                     <img
-                      src={twitter}
-                      className="w-[22px] "
-                      alt="Telegram"
+                      src={insta}
+                      className="w-[28px] "
+                      alt="Instagram"
                     ></img>
-                  </a>
-                </div>
-                <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
-                  <a className="m-auto" href="#">
-                    <img src={viber} className="w-[22px] " alt="Telegram"></img>
                   </a>
                 </div>
               </div>
@@ -68,22 +52,12 @@ const Footer = () => {
           <div className="footer-links flex justify-start items-center mt-8">
             <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
               <a className="m-auto" href="#">
-                <img src={telegram} className="w-[22px] " alt="Telegram"></img>
-              </a>
-            </div>
-            <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
-              <a className="m-auto" href="#">
                 <img src={facebook} className="w-[22px] " alt="Telegram"></img>
               </a>
             </div>
             <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
               <a className="m-auto" href="#">
-                <img src={twitter} className="w-[22px] " alt="Telegram"></img>
-              </a>
-            </div>
-            <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
-              <a className="m-auto" href="#">
-                <img src={viber} className="w-[22px] " alt="Telegram"></img>
+                <img src={insta} className="w-[28px]" alt="Instagram"></img>
               </a>
             </div>
           </div>
@@ -133,8 +107,18 @@ const Footer = () => {
             <div>
               <h3 className="text-white">Policies</h3>
               <nav className="bottom-link flex flex-col items-start">
-                <a href="https://drive.google.com/file/d/1-NQ_regpfyHrPLcmPYeVbJ1EKqCQOhGl/view" target="_blank">Privacy policy</a>
-                <a href="https://drive.google.com/file/d/1-NQ_regpfyHrPLcmPYeVbJ1EKqCQOhGl/view" target="_blank">Terms</a>
+                <a
+                  href="https://drive.google.com/file/d/1-NQ_regpfyHrPLcmPYeVbJ1EKqCQOhGl/view"
+                  target="_blank"
+                >
+                  Privacy policy
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1-NQ_regpfyHrPLcmPYeVbJ1EKqCQOhGl/view"
+                  target="_blank"
+                >
+                  Terms
+                </a>
               </nav>
             </div>
           </div>

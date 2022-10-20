@@ -36,7 +36,7 @@ const Navbar = () => {
             <AnchorLink href="#features">FEATURES</AnchorLink>
             <AnchorLink href="#howitworks">HOW IT WORKS</AnchorLink>
           </nav>
-          <button className="hidden md:inline light-btn-nav">Contact</button>
+          <AnchorLink  href='#userform' offset="100px"><button className="hidden md:inline light-btn-nav">Contact</button></AnchorLink>
           <div className="ml-auto my-auto md:hidden">
             {toggleMenu ? (
               <VscClose
@@ -93,7 +93,7 @@ const Navbar = () => {
                       <h2>HOW IT WORKS</h2>
                     </AnchorLink>
                   </motion.nav>
-                  <button className="light-btn mx-auto mt-12">Contact</button>
+                  <AnchorLink  href='#userform' offset="100px" className='mx-auto'><button className="light-btn mx-auto mt-12" >Contact</button></AnchorLink>
                 </motion.div>
               )}
             </AnimatePresence>
