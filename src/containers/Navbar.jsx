@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <section id="home" className="bg-[#FBFBFD] relative">
       <div className="container-p">
-        <div className="h-16 flex items-center justify-between md:my-2 lg:my-4">
+        <div className="h-20 flex items-center justify-between md:py-2 lg:py-4">
           <img src={logo} alt="Logo" className="h-8 lg:h-12 my-auto"></img>
           <nav className="inline-navbar hidden md:flex items-center justify-center ">
             <AnchorLink offset="60" href="#about">

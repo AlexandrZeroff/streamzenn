@@ -21,7 +21,10 @@ const Footer = () => {
               <h2 className="text-[#F7FEFF]">Social media</h2>
               <div className="footer-links flex justify-start items-center mt-8">
                 <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
-                  <a className="m-auto" href="#">
+                  <a
+                    className="m-auto"
+                    href="https://www.facebook.com/profile.php?id=100087237523334"
+                  >
                     <img
                       src={facebook}
                       className="w-[22px] "
@@ -30,7 +33,10 @@ const Footer = () => {
                   </a>
                 </div>
                 <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
-                  <a className="m-auto" href="#">
+                  <a
+                    className="m-auto"
+                    href="https://www.instagram.com/streamzenn_pro/"
+                  >
                     <img
                       src={insta}
                       className="w-[28px] "
@@ -51,12 +57,18 @@ const Footer = () => {
           <h2 className="text-[#F7FEFF]">Social media</h2>
           <div className="footer-links flex justify-start items-center mt-8">
             <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
-              <a className="m-auto" href="#">
+              <a
+                className="m-auto"
+                href="https://www.facebook.com/profile.php?id=100087237523334"
+              >
                 <img src={facebook} className="w-[22px] " alt="Telegram"></img>
               </a>
             </div>
             <div className="bg-[#474C61] w-[50px] h-[50px] rounded-[60px] flex mr-4 cursor-pointer">
-              <a className="m-auto" href="#">
+              <a
+                className="m-auto"
+                href="https://www.instagram.com/streamzenn_pro/"
+              >
                 <img src={insta} className="w-[28px]" alt="Instagram"></img>
               </a>
             </div>
@@ -73,8 +85,8 @@ const Footer = () => {
               Company name: JMIND SYSTEMS LTD
             </p>
             <p className="mt-6 text-[#F7FEFF] text-sm">
-              Legal address: 9, Vasili Michaldi, Globalserve business centre,
-              3026, Limassol, Cyprus
+              Legal address: Emmanouil Roidi, 10-12 2nd floor Agla Zoni, 3031,
+              Limassol, Cyprus
             </p>
             <p className="mt-10 text-[#F7FEFF] text-sm">
               © Copyright 2022 streamzenn. All Rights Reserved
